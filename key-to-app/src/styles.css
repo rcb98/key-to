@@ -1,0 +1,5 @@
+/* This will process Tailwind directives and inject the following classes: */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
