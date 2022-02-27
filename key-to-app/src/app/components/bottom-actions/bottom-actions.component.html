@@ -1,1 +1,73 @@
-<p class="bg-yellow-500 absolute bottom-0 w-full">bottom-actions works!</p>
+<!-- BOTTOM ACTIONS -->
+<div class="bg-gray-200 absolute bottom-0 w-full py-4 px-10 flex">
+    <!-- Go back to user list -->
+    <button class="bg-gray-400 bg-gradient-to-t from-gray-500 border border-gray-500 text-white rounded-md flex items-center px-3 py-2 font-semibold hover:bg-gray-500 transition duration-150 ease-in-out">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <polyline points="15 6 9 12 15 18" />
+      </svg>
+      <span class="uppercase ml-2">Back to list</span>
+    </button>
+
+    <!-- Multi-options -->
+    <div class="bg-gray-400 bg-gradient-to-t from-gray-500 border border-gray-500 rounded-md flex mx-4">
+        <button class="px-3 py-2 border-r border-r-gray-500 hover:bg-gray-500 transition duration-150 ease-in-out">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <polyline points="15 6 9 12 15 18" />
+          </svg>
+        </button>
+        <button class="px-3 py-2 border-r border-r-gray-500 hover:bg-gray-500 transition duration-150 ease-in-out">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <polyline points="9 6 15 12 9 18" />
+          </svg>
+        </button>
+        <button class="px-3 py-2 border-r border-r-gray-500 hover:bg-gray-500 transition duration-150 ease-in-out">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="12" cy="12" r="9" />
+            <line x1="9" y1="12" x2="15" y2="12" />
+            <line x1="12" y1="9" x2="12" y2="15" />
+          </svg>
+        </button>
+        <button class="px-3 py-2 hover:bg-gray-500 transition duration-150 ease-in-out">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-minus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="12" cy="12" r="9" />
+            <line x1="9" y1="12" x2="15" y2="12" />
+          </svg>
+        </button>
+    </div>
+
+    <!-- Print, Refresh & Save -->
+    <div class="flex ml-auto">
+        <!-- Print -->
+        <button class="bg-gray-500 bg-gradient-to-t from-gray-600 border border-gray-600 text-white rounded-md flex items-center px-3 py-2 font-semibold hover:bg-gray-600 transition duration-150 ease-in-out">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-printer" width="24" height="24" viewBox="0 0 24 24" stroke-width="2.5" stroke="#4090CA" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M17 17h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h2" />
+            <path d="M17 9v-4a2 2 0 0 0 -2 -2h-6a2 2 0 0 0 -2 2v4" />
+            <rect x="7" y="13" width="10" height="8" rx="2" />
+          </svg>
+        <span class="uppercase ml-2">Print</span>
+        </button>
+        <!-- Refresh -->
+        <button class="bg-gray-500 bg-gradient-to-t from-gray-600 border border-gray-600 text-white rounded-md flex items-center px-3 py-2 mx-4 font-semibold hover:bg-gray-600 transition duration-150 ease-in-out">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-refresh" width="24" height="24" viewBox="0 0 24 24" stroke-width="2.5" stroke="#4090CA" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" />
+            <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4" />
+          </svg>
+        <span class="uppercase ml-2">Refresh</span>
+        </button>
+        <!-- Save -->
+        <button disabled class="disabled:opacity-50 bg-gray-500 bg-gradient-to-t from-gray-600 border border-gray-600 text-white rounded-md flex items-center px-3 py-2 font-semibold cursor-no-drop">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M5 12l5 5l10 -10" />
+          </svg>
+        <span class="uppercase ml-2">Save</span>
+        </button>
+    </div>
+</div>
