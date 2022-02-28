@@ -1,5 +1,156 @@
-<div class="flex mx-24 my-4">
-    <p class="bg-yellow-500 w-11/12">user-detail works!</p>
+<!-- USER DETAIL -->
+<div class="flex mx-32 my-4">
+    <!-- User detail -->
+    <div class="w-11/12 bg-gray-100 border border-white text-gray-600">
+        <!-- Header -->
+        <div class="flex items-center p-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="32" height="32" viewBox="0 0 24 24" stroke-width="3" stroke="#4b5563" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="12" cy="7" r="4" />
+            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+          </svg>
+            <h1 class="font-bold text-4xl ml-2">User 1</h1>
+        </div>
+        <!-- Assign Key -->
+        <div class="bg-gray-400 p-4">
+            <button class="bg-gray-700 bg-gradient-to-t from-gray-800 border border-gray-800 outline outline-4 outline-gray-500 text-white rounded-md flex items-center px-3 py-2 mx-4 font-semibold hover:bg-gray-800 transition duration-150 ease-in-out">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-key" width="24" height="24" viewBox="0 0 24 24" stroke-width="2.5" stroke="#4090CA" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="8" cy="15" r="4" />
+                <line x1="10.85" y1="12.15" x2="19" y2="4" />
+                <line x1="18" y1="5" x2="20" y2="7" />
+                <line x1="15" y1="8" x2="17" y2="10" />
+              </svg>
+          <span class="uppercase ml-2">Assign key</span>
+          </button>
+        </div>
+        <!-- Identification -->
+        <div class="p-4">
+            <div class="border border-gray-300 rounded">
+                <h2 class="uppercase text-gray-400 font-semibold bg-gray-200 p-2 border border-b-gray-300">Identification</h2>
+                <!-- Form -->
+                <form action="" class="p-4 flex flex-col">
+                    <!-- General information -->
+                    <div class="flex border-b border-b-gray-300 pb-8">
+                        <img src="../../../assets/no-pic.jpeg" alt="No profile picture" class="w-40">
+
+                        <div class="flex flex-col w-screen">
+                            <div class="bg-gray-200 rounded p-4 ml-8 flex">
+                                <!-- Title -->
+                                <div class="flex flex-col w-1/12">
+                                    <label for="title" class="font-semibold text-gray-600 mb-1">Title</label>
+                                    <input autofocus type="text" name="title" id="title" class="rounded h-10 border border-gray-300 bg-gradient-to-b from-gray-200 focus:outline focus:outline-2 focus:outline-blue-500 px-2">
+                                </div>
+                                <!-- First name -->
+                                <div class="flex flex-col mx-4 w-3/12">
+                                    <label for="first-name" class="font-semibold text-gray-600 mb-1">First name</label>
+                                    <input type="text" name="first-name" id="first-name" class="rounded h-10 border border-gray-300 bg-gradient-to-b from-gray-200 focus:outline focus:outline-2 focus:outline-blue-500 px-2">
+                                </div>
+                                <!-- Last name -->
+                                <div class="flex flex-col w-4/12">
+                                    <label for="last-name" class="font-semibold text-gray-600 mb-1">Last name</label>
+                                    <input type="text" name="last-name" id="last-name" class="rounded h-10 border border-gray-300 bg-gradient-to-b from-gray-200 focus:outline focus:outline-2 focus:outline-blue-500 px-2">
+                                </div>
+                                <!-- Ban user -->
+                                <button class="bg-gray-500 bg-gradient-to-t from-gray-600 border border-gray-600 text-white rounded-md flex items-center px-3 py-2 ml-4 self-end font-semibold hover:bg-gray-600 transition duration-150 ease-in-out h-min">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ban" width="24" height="24" viewBox="0 0 24 24" stroke-width="2.5" stroke="#4090CA" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <circle cx="12" cy="12" r="9" />
+                                <line x1="5.7" y1="5.7" x2="18.3" y2="18.3" />
+                              </svg>
+                              <span class="uppercase ml-2">Ban user</span>
+                            </button>
+                            </div>
+
+                            <!-- ROM Code -->
+                            <div class="flex flex-col ml-8 px-4 py-2 w-1/2">
+                                <label for="rom" class="font-semibold text-gray-600 mb-1">ROM code (Automatic assignment)</label>
+                                <input type="text" name="rom" id="rom" class="rounded h-10 border border-gray-300 bg-gradient-to-b from-gray-200 focus:outline focus:outline-2 focus:outline-blue-500 px-2">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Partition -->
+                    <div class="flex flex-col pt-4 w-2/12">
+                        <label for="partition" class="font-semibold text-gray-600 mb-1">Partition</label>
+                        <select name="partition" id="partition" class="rounded h-10 border border-gray-300 bg-gradient-to-t from-gray-200 focus:outline focus:outline-2 focus:outline-blue-500 px-2 cursor-pointer">
+                          <option value="general">General</option>
+                          <option value="item-1">Item 1</option>
+                          <option value="item-2">Item 3</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="flex">
+            <!-- Key options -->
+            <div class="pl-4 pr-2 pb-4 w-5/12">
+                <div class="border border-gray-300 rounded">
+                    <h2 class="uppercase text-gray-400 font-semibold bg-gray-200 p-2 border border-b-gray-300">Key options</h2>
+                    <!-- Form -->
+                    <form action="" class="p-4 flex flex-col">
+                        <label class="flex items-center py-1">
+                          <input type="checkbox" class="rounded text-blue-500 cursor-pointer" />
+                          <span class="ml-2">Use extended opening time</span>
+                        </label>
+                        <label class="flex items-center py-1">
+                          <input type="checkbox" class="rounded text-blue-500 cursor-pointer" />
+                          <span class="ml-2">Override privacy</span>
+                        </label>
+                        <label class="flex items-center py-1">
+                          <input type="checkbox" class="rounded text-blue-500 cursor-pointer" />
+                          <span class="ml-2">Override lockdown</span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <!-- User and key expiration -->
+            <div class="pl-2 pr-4 pb-4 w-7/12">
+                <div class="border border-gray-300 rounded">
+                    <h2 class="uppercase text-gray-400 font-semibold bg-gray-200 p-2 border border-b-gray-300">User and key expiration</h2>
+                    <!-- Form -->
+                    <form action="" class="p-4 flex">
+                        <div class="flex w-screen">
+                            <!-- User activation -->
+                            <div class="flex flex-col w-1/2">
+                                <label for="user-activation" class="font-semibold text-gray-600 mb-1">User activation</label>
+                                <div class="pb-2">
+                                    <input type="date" name="user-activation" id="user-activation" value="2021-12-20" class="rounded h-10 border border-gray-300 bg-gradient-to-b from-gray-200 focus:outline focus:outline-2 focus:outline-blue-500 px-2">
+                                    <input type="time" name="user-activation-time" id="user-activation-time" value="13:55" class="rounded h-10 border border-gray-300 bg-gradient-to-b from-gray-200 focus:outline focus:outline-2 focus:outline-blue-500 px-2 ml-1">
+                                </div>
+
+                                <label class="flex items-center pt-2">
+                                  <input type="checkbox" class="rounded text-blue-500 cursor-pointer" />
+                                  <span class="ml-2">User expiration</span>
+                                </label>
+                            </div>
+
+                            <!-- Calendar -->
+                            <div class="flex flex-col w-1/2">
+                                <div class="flex flex-col w-1/2 pb-2">
+                                    <label for="partition" class="font-semibold text-gray-600 mb-1">Calendar</label>
+                                    <select name="partition" id="partition" class="rounded h-10 border uppercase italic text-gray-400 border-gray-300 bg-gradient-to-t from-gray-200 focus:outline focus:outline-2 focus:outline-blue-500 px-2 cursor-pointer">
+                                    <option value="same-as-lock">Same as lock</option>
+                                    <option value="item-1">Item 1</option>
+                                    <option value="item-2">Item 3</option>
+                                  </select>
+                                </div>
+
+                                <label class="flex items-center pt-2">
+                                  <input type="checkbox" class="rounded text-blue-500 cursor-pointer" />
+                                  <span class="ml-2">Enable revalidation of key expiration</span>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- LATERAL BAR -->
     <div class="w-1/12">
         <app-lateral-menu></app-lateral-menu>
     </div>

@@ -1,0 +1,5 @@
+#admin-link:hover .font-semibold,
+#admin-link:hover .icon {
+    color: #21527E;
+    stroke: #21527E;
+}
