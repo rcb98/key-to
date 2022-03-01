@@ -31,28 +31,28 @@
                 <!-- Form -->
                 <form action="" class="p-4 flex flex-col">
                     <!-- General information -->
-                    <div class="flex border-b border-b-gray-300 pb-8">
-                        <img src="../../../assets/no-pic.jpeg" alt="No profile picture" class="w-40">
+                    <div class="flex flex-col lg:flex-row mx-auto xl:mx-0 border-b border-b-gray-300 pb-8">
+                        <img src="../../../assets/no-pic.jpeg" alt="No profile picture" class="w-40 h-48 mx-auto mb-4 lg:mr-4 xl:m-0">
 
-                        <div class="flex flex-col w-screen">
-                            <div class="bg-gray-200 rounded p-4 ml-8 flex">
+                        <div class="flex flex-col xl:w-screen mx-auto xl:mx-0">
+                            <div class="bg-gray-200 rounded p-4 xl:ml-8 flex flex-col xl:flex-row">
                                 <!-- Title -->
-                                <div class="flex flex-col w-1/12">
+                                <div class="flex flex-col xl:w-1/12">
                                     <label for="title" class="font-semibold text-gray-600 mb-1">Title</label>
                                     <input autofocus type="text" name="title" id="title" class="rounded h-10 border border-gray-300 bg-gradient-to-b from-gray-200 focus:outline focus:outline-2 focus:outline-blue-500 px-2">
                                 </div>
                                 <!-- First name -->
-                                <div class="flex flex-col mx-4 w-3/12">
+                                <div class="flex flex-col xl:mx-4 xl:w-3/12">
                                     <label for="first-name" class="font-semibold text-gray-600 mb-1">First name</label>
                                     <input type="text" name="first-name" id="first-name" class="rounded h-10 border border-gray-300 bg-gradient-to-b from-gray-200 focus:outline focus:outline-2 focus:outline-blue-500 px-2">
                                 </div>
                                 <!-- Last name -->
-                                <div class="flex flex-col w-4/12">
+                                <div class="flex flex-col xl:w-4/12">
                                     <label for="last-name" class="font-semibold text-gray-600 mb-1">Last name</label>
                                     <input type="text" name="last-name" id="last-name" class="rounded h-10 border border-gray-300 bg-gradient-to-b from-gray-200 focus:outline focus:outline-2 focus:outline-blue-500 px-2">
                                 </div>
                                 <!-- Ban user -->
-                                <button class="bg-gray-500 bg-gradient-to-t from-gray-600 border border-gray-600 text-white rounded-md flex items-center px-3 py-2 ml-4 self-end font-semibold hover:bg-gray-600 transition duration-150 ease-in-out h-min">
+                                <button class="bg-gray-500 bg-gradient-to-t from-gray-600 border border-gray-600 text-white rounded-md flex items-center px-3 py-2 mx-auto mt-4 xl:ml-4 xl:mt-0 self-end font-semibold hover:bg-gray-600 transition duration-150 ease-in-out h-min">
                               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ban" width="24" height="24" viewBox="0 0 24 24" stroke-width="2.5" stroke="#4090CA" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                 <circle cx="12" cy="12" r="9" />
@@ -63,14 +63,14 @@
                             </div>
 
                             <!-- ROM Code -->
-                            <div class="flex flex-col ml-8 px-4 py-2 w-1/2">
+                            <div class="flex flex-col mx-auto xl:ml-8 px-4 py-2 xl:w-1/2">
                                 <label for="rom" class="font-semibold text-gray-600 mb-1">ROM code (Automatic assignment)</label>
                                 <input type="text" name="rom" id="rom" class="rounded h-10 border border-gray-300 bg-gradient-to-b from-gray-200 focus:outline focus:outline-2 focus:outline-blue-500 px-2">
                             </div>
                         </div>
                     </div>
                     <!-- Partition -->
-                    <div class="flex flex-col pt-4 w-2/12">
+                    <div class="flex mx-auto xl:mx-0 flex-col pt-4 xl:w-2/12">
                         <label for="partition" class="font-semibold text-gray-600 mb-1">Partition</label>
                         <select name="partition" id="partition" class="rounded h-10 border border-gray-300 bg-gradient-to-t from-gray-200 focus:outline focus:outline-2 focus:outline-blue-500 px-2 cursor-pointer">
                           <option value="general">General</option>
@@ -83,9 +83,9 @@
 
         </div>
 
-        <div class="flex">
+        <div class="flex flex-col xl:flex-row">
             <!-- Key options -->
-            <div class="pl-4 pr-2 pb-4 w-5/12">
+            <div class="px-4 xl:pl-4 xl:pr-2 pb-4 w-full xl:w-5/12">
                 <div class="border border-gray-300 rounded">
                     <h2 class="uppercase text-gray-400 font-semibold bg-gray-200 p-2 border border-b-gray-300">Key options</h2>
                     <!-- Form -->
@@ -106,14 +106,14 @@
                 </div>
             </div>
             <!-- User and key expiration -->
-            <div class="pl-2 pr-4 pb-4 w-7/12">
+            <div class="px-4 xl:pl-2 xl:pr-4 pb-4 w-full xl:w-7/12">
                 <div class="border border-gray-300 rounded">
                     <h2 class="uppercase text-gray-400 font-semibold bg-gray-200 p-2 border border-b-gray-300">User and key expiration</h2>
                     <!-- Form -->
                     <form action="" class="p-4 flex">
-                        <div class="flex w-screen">
+                        <div class="flex w-screen flex-col lg:flex-row">
                             <!-- User activation -->
-                            <div class="flex flex-col w-1/2">
+                            <div class="flex flex-col lg:w-1/2">
                                 <label for="user-activation" class="font-semibold text-gray-600 mb-1">User activation</label>
                                 <div class="pb-2">
                                     <input type="date" name="user-activation" id="user-activation" value="2021-12-20" class="rounded h-10 border border-gray-300 bg-gradient-to-b from-gray-200 focus:outline focus:outline-2 focus:outline-blue-500 px-2">
@@ -127,7 +127,7 @@
                             </div>
 
                             <!-- Calendar -->
-                            <div class="flex flex-col w-1/2">
+                            <div class="flex flex-col lg:w-1/2">
                                 <div class="flex flex-col w-1/2 pb-2">
                                     <label for="partition" class="font-semibold text-gray-600 mb-1">Calendar</label>
                                     <select name="partition" id="partition" class="rounded h-10 border uppercase italic text-gray-400 border-gray-300 bg-gradient-to-t from-gray-200 focus:outline focus:outline-2 focus:outline-blue-500 px-2 cursor-pointer">
@@ -138,7 +138,7 @@
                                 </div>
 
                                 <label class="flex items-center pt-2">
-                                  <input type="checkbox" class="rounded text-blue-500 cursor-pointer" />
+                                  <input type="checkbox" class="rounded text-blue-500 cursor-" />
                                   <span class="ml-2">Enable revalidation of key expiration</span>
                                 </label>
                             </div>
